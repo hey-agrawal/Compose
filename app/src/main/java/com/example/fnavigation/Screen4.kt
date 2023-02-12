@@ -34,6 +34,9 @@ fun Screen4(navController: NavHostController) {
             Button(onClick = {navController.navigate(Destination.ScreenFive.route)}) {
                 Text(text = "Next")
             }
+            Button(onClick = {navController.navigateUp()}) {
+                Text(text = "Back")
+            }
         }
     }
 }
